@@ -85,7 +85,7 @@ export default function Cart(){
             <li key={product.id}>
                 <p>{product.name}{'    '}{product.price}$/ud{'    '}  
                 <button onClick={() => dispatch({type:'handleRemove', productId:product.id})}>-</button>    
-                    {product.quantity}ud/uds
+                    {product.quantity}{product.quantity == 1? 'ud':'uds'}
                 <button onClick={() => dispatch({type:'handleAdd', product:product})}>+</button>{'    '}
                     {product.price*product.quantity}$ total{'    '}
                 <button onClick={() => dispatch({type:'handleDelete', productId:product.id})}>ELIMINAR</button></p>
