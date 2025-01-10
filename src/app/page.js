@@ -3,6 +3,7 @@ import Counter from './Counter';
 import Form from './Form';
 import TaskList from './TaskList';
 import Cart from './Cart';
+import UserList from './UserList';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <h1>Ejercicio 4</h1>
       <Cart></Cart>
       <h1>Ejercicio 5</h1>
+      <UserList></UserList>
       <h1>Ejercicio 6</h1>
     </div>
   );
