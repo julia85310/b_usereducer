@@ -52,7 +52,7 @@ const usersData = [
     }
   ];
   
-export default function UserList(){
+export default function UserFinder(){
     const inicialValue = {filtro: '', resultado:usersData};
     const[busqueda, dispatch] = useReducer(userListReducer, inicialValue);
     
